@@ -43,7 +43,7 @@
 <p>其中每个属性都是什么意思，这里就不赘述了，自行搜索吧。</p>
 <p><strong>DemoApplication.java:</strong><br>每个Springboot项目都会有这种一个xxxApplication.java的入口程序，其中标注了@SpringbootApplication注解，有啥用呢我也不知道，百度一下其他人会讲的比我清楚。这里只需要知道，Springboot的牛逼之处就是自动配置bean，相当于省去了Spring配置扫描包的一步。但是Server和Controller等需要配置bean的类所在的包要与这个入口同级或者下级，Springboot才会自动扫描配置，当然，相应的@Server和@Controller等注解也是不可少的。如果不想这么耗性能，也可以自行配置去掉一些包不扫描，怎么写呢，我也不记得了。</p>
 <p>Springboot大概就是在以上的一些地方对Spring烦死个人的配置进行了优化，学起来用起来也不那么吃力了。除了这些方面，Springboot对于其他整合的框架诸如SpringMVC、Mybatis也做了一些优化，这些之后有空再介绍了。</p>
-<h2 id="有趣一点"><a href="#有趣一点" class="headerlink" title="有趣一点"></a>有趣一点</h2><p>Springboot项目启动的时候，会在控制台会显示一个Spring字样的Banner。<br><img src="../images/banner1.png" alt="banner1"><br>这个Banner是可以更改的，只要编写一个banner.txt，在里面添加上自己的banner，放到resources文件夹下就可以。其中的样式可以在<a href="http://patorjk.com/software/taag/" target="_blank" rel="noopener">http://patorjk.com/software/taag</a>里编辑。<br><img src="../images/banner2.jpg" alt="banner2"></p>
+<h2 id="有趣一点"><a href="#有趣一点" class="headerlink" title="有趣一点"></a>有趣一点</h2><p>Springboot项目启动的时候，会在控制台会显示一个Spring字样的Banner。<br><img src="/images/banner1.png" alt="banner1"><br>这个Banner是可以更改的，只要编写一个banner.txt，在里面添加上自己的banner，放到resources文件夹下就可以。其中的样式可以在<a href="http://patorjk.com/software/taag/" target="_blank" rel="noopener">http://patorjk.com/software/taag</a>里编辑。<br><img src="/images/banner2.jpg" alt="banner2"><br>对这个感兴趣的也可以到<a href="https://blog.mythsman.com/2017/06/05/1/" target="_blank" rel="noopener">庆祝大佬的博客</a>了解一下</p>
 <h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul>
 <li>由于这个框架比较新，因此很多组件都需要java8的支持，并且如果以后发布到服务器上，也需要Tomcat8的支持，这一点需要尤其的注意。</li>
 <li>用了就戒不掉了。</li>
